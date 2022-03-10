@@ -1,0 +1,11 @@
+node_modules
+
+/*
+
+!/spec
+!/src
+!/.gitignore
+!/.pretierrc.json
+!/build.ts
+!/package*.json
+!/tsconfig*.json
