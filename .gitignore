@@ -5,7 +5,7 @@ node_modules
 !/spec
 !/src
 !/.gitignore
-!/.pretierrc.json
+!/.prettierrc.json
 !/build.ts
 !/package*.json
 !/tsconfig*.json
