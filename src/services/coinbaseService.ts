@@ -1,5 +1,5 @@
 import { Client } from 'coinbase'
-import { logos } from '@config/index'
+import { logos } from '../config'
 
 const PAIRS = ['ETH-USD', 'BTC-USD', 'DAI-USD']
 
