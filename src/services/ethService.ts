@@ -4,9 +4,7 @@ import { Token } from '@uniswap/sdk-core'
 import { abi as IUniswapV3PoolABI } from '@uniswap/v3-core/artifacts/contracts/interfaces/IUniswapV3Pool.sol/IUniswapV3Pool.json'
 import { pairs, TOKENS, CHAIN_IDS } from '../config'
 
-const provider = new ethers.providers.JsonRpcProvider(
-    'https://mainnet.infura.io/v3/f1186d2ccefb4a4bba19eadd91eabfad'
-)
+const provider = new ethers.providers.JsonRpcProvider(process.env.INFURA_ENDPOINT)
 
 interface Immutables {
     factory: string

@@ -3,12 +3,10 @@ import { logos } from '@config/index'
 
 const PAIRS = ['ETH-USD', 'BTC-USD', 'DAI-USD']
 
-const ENDPOINT = 'https://api.coinbase.com/v2/prices/:currency_pair/spot'
-
 const coinbase = new Client({
-    apiKey: 'TN7cwSj7XT3LT74e',
-    apiSecret: 'zf8fBPSjMQX9TUCzdxxWzgzB6qQijnJ3',
-    strictSSL: false
+    apiKey: process.env.COINBASE_API_KEY,
+    apiSecret: process.env.COINBASE_API_SECRET,
+    strictSSL: false,
 })
 
 const getPriceByPair = (pair: string) => {
